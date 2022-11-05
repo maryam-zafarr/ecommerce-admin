@@ -1,7 +1,12 @@
 import React from "react";
+import Navigation from "./components/Layout/Navigation";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <Navigation />
+    </div>
+  );
 };
 
 export default App;
