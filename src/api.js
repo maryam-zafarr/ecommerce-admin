@@ -45,3 +45,14 @@ export const deleteProduct = async (productId) => {
   }
   return data;
 };
+
+// GET ALL ORDERS
+export const getOrders = async () => {
+  const response = await fetch(`${DOMAIN}/orders`);
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Unable to fetch orders.");
+  }
+  return data;
+};

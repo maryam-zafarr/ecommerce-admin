@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Products from "./pages/Products";
 import NewProduct from "./pages/NewProduct";
+import Orders from "./pages/Orders";
 
 const App = () => {
   return (
@@ -16,6 +17,9 @@ const App = () => {
       </Route>
       <Route path="/products/new">
         <NewProduct />
+      </Route>
+      <Route path="/orders">
+        <Orders />
       </Route>
     </Switch>
   );
