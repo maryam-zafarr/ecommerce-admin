@@ -19,7 +19,7 @@ const ProductList = () => {
       <div className={classes.listHeader}>
         {["", "ID", "TITLE", "", "PRICE", "", "IN STOCK"].map((num) => {
           return (
-            <div className={classes.item}>
+            <div className={classes.item} key={Math.random()}>
               <p>{num}</p>
             </div>
           );

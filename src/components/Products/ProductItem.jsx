@@ -3,8 +3,14 @@ import classes from "./ProductItem.module.css";
 import Card from "../UI/Card";
 import { Link } from "react-router-dom";
 import { Delete, Edit } from "@mui/icons-material";
+import { deleteProduct } from "../../api";
 
 const ProductItem = (props) => {
+  const productDeleteHandler = async () => {
+    await deleteProduct(props.item._id);
+    window.location.reload();
+  };
+
   return (
     <div className={classes.item}>
       <Card>
@@ -26,9 +32,9 @@ const ProductItem = (props) => {
           >
             <Edit />
           </Link>
-          <Link to="/" className={classes.link}>
+          <button className={classes.button} onClick={productDeleteHandler}>
             <Delete />
-          </Link>
+          </button>
         </div>
       </Card>
     </div>
