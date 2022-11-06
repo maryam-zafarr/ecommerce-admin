@@ -1,0 +1,8 @@
+.statistics {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.item {
+  margin-right: 60px;
+}

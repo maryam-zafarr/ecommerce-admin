@@ -1,0 +1,13 @@
+.card {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: rgb(38, 29, 47);
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: rgba(40, 21, 70, 0.818) 0px 10px 20px 1px;
+}

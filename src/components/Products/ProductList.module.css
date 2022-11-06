@@ -1,0 +1,13 @@
+.productList {
+  height: 560px;
+  overflow-y: scroll;
+}
+
+.listHeader {
+  display: flex;
+}
+
+.item {
+  margin-left: 48px;
+  margin-right: 50px;
+}

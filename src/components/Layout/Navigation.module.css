@@ -1,10 +1,11 @@
 .navbar {
-  width: 12%;
+  width: 15%;
   height: 100vh !important;
   padding: 0px 10px 0px 30px;
   background-repeat: 2rem;
   border-right: 1px solid rgba(192, 183, 208, 0.601);
   background-color: white;
+  position: fixed;
 }
 
 .navbar * {
@@ -23,8 +24,8 @@
 
 .navLink {
   display: flex;
-  align-items: center;
-  margin-top: 30px;
+  align-items: flex-start;
+  margin-top: 25px;
   font-size: 16px;
   color: rgb(67, 65, 65);
   text-decoration: none;
