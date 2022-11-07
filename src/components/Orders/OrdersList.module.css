@@ -1,0 +1,12 @@
+.orderList {
+  height: 560px;
+  overflow-y: scroll;
+}
+
+.listHeader {
+  display: flex;
+}
+
+.item {
+  margin: 20px 105px 0px 10px;
+}
