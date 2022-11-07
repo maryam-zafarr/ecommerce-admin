@@ -13,12 +13,12 @@ const Navigation = () => {
   return (
     <div className={classes.navbar}>
       <div className={classes.logo}>
-        <h2>V A N I T Y</h2>
+        <h3>V A N I T Y</h3>
       </div>
       <div className={classes.navItems}>
         <ul>
           <NavLink
-            to="/"
+            to="/dashboard"
             className={classes.navLink}
             activeClassName={classes.active}
           >
