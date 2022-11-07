@@ -1,0 +1,48 @@
+.navbar {
+  width: 12%;
+  height: 100vh !important;
+  padding: 0px 10px 0px 30px;
+  background-repeat: 2rem;
+  border-right: 1px solid rgba(192, 183, 208, 0.601);
+  background-color: white;
+}
+
+.navbar * {
+  background-color: white;
+}
+
+.logo {
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+
+.navItems ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 16px;
+  color: rgb(67, 65, 65);
+  text-decoration: none;
+}
+
+.navLink p {
+  margin-left: 6px;
+}
+
+.navLink:hover {
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+.active {
+  font-weight: bold;
+  cursor: pointer;
+  border-right: 3px solid black;
+  color: black;
+}
