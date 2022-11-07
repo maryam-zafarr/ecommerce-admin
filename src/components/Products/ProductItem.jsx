@@ -26,12 +26,6 @@ const ProductItem = (props) => {
           <div className={classes.contentItem}>
             <p>{props.item.inStock.toString()}</p>
           </div>
-          <Link
-            to={`/products/${props.item._id}/edit`}
-            className={classes.link}
-          >
-            <Edit />
-          </Link>
           <button className={classes.button} onClick={productDeleteHandler}>
             <Delete />
           </button>
