@@ -56,3 +56,47 @@ export const getOrders = async () => {
   }
   return data;
 };
+
+// GET MONYHLY INCOME
+export const getIncome = async () => {
+  const response = await fetch(`${DOMAIN}/orders/income`);
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Unable to fetch income.");
+  }
+  return data;
+};
+
+// GET ORDER COUNT
+export const getOrderCount = async () => {
+  const response = await fetch(`${DOMAIN}/orders/count`);
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Unable to fetch order count.");
+  }
+  return data;
+};
+
+// GET CUSTOMER COUNT
+export const getCustomerCount = async () => {
+  const response = await fetch(`${DOMAIN}/orders/customers`);
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Unable to fetch customer count.");
+  }
+  return data;
+};
+
+// GET USER STATS
+export const getUserStats = async () => {
+  const response = await fetch(`${DOMAIN}/users/stats`);
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Unable to fetch customer count.");
+  }
+  return data;
+};
