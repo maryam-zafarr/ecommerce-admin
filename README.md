@@ -1,1 +1,1 @@
-## Admin Dashboars
+## Admin Dashboard
