@@ -1,8 +1,8 @@
 import classes from "./Login.module.css";
 import { useFormik } from "formik";
-import { Link, useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../../api";
+import { useHistory } from "react-router-dom";
 
 const validate = (values) => {
   const errors = {};
@@ -31,8 +31,8 @@ const Login = () => {
     },
     validate,
     onSubmit: async (values) => {
+      history.push("/");
       dispatch(login(values));
-      history.push("/dashboard");
     },
   });
 

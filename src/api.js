@@ -114,10 +114,7 @@ export const login = createAsyncThunk("user/loginUser", async (userData) => {
   });
   const data = await response.json();
 
-  if (!response.ok) {
-    throw new Error(data.message || "Unable to login.");
-  }
-  if (!data.isAdmin) {
+  if (!response.ok || !data.isAdmin) {
     throw new Error(data.message || "Unable to login.");
   }
 

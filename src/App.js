@@ -1,11 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Products from "./pages/Products";
 import NewProduct from "./pages/NewProduct";
 import Orders from "./pages/Orders";
 import Login from "./components/Auth/Login";
+import PrivateRoute from "./PrivateRoute";
 
 const App = () => {
   return (
@@ -13,18 +14,21 @@ const App = () => {
       <Route path="/login" exact>
         <Login />
       </Route>
-      <Route path="/dashboard" exact>
+      <PrivateRoute path="/" exact>
         <Dashboard />
-      </Route>
-      <Route path="/products" exact>
+      </PrivateRoute>
+      <PrivateRoute path="/dashboard" exact>
+        <Dashboard />
+      </PrivateRoute>
+      <PrivateRoute path="/products" exact>
         <Products />
-      </Route>
-      <Route path="/products/new">
+      </PrivateRoute>
+      <PrivateRoute path="/products/new">
         <NewProduct />
-      </Route>
-      <Route path="/orders">
+      </PrivateRoute>
+      <PrivateRoute path="/orders">
         <Orders />
-      </Route>
+      </PrivateRoute>
     </Switch>
   );
 };
