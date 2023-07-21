@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
-const DOMAIN = "http://localhost:5000/api";
+const DOMAIN = "https://ecommerce-vanity-api.onrender.com/api";
 
 // GET ALL PRODUCTS
 export const getProducts = async () => {
